@@ -19,6 +19,7 @@ export function AppNavbar() {
     { name: "Education", link: "#education" },
     { name: "Projects", link: "#projects" },
     { name: "Skills", link: "#skills" },
+    { name: "Services", link: "#services" },
     { name: "Contact", link: "#contact" },
   ];
 
