@@ -32,7 +32,7 @@ export function Hero() {
         </h1>
 
         <div className="flex items-center justify-center gap-4 mb-8 text-xl md:text-2xl">
-          <span>Hello, I'm</span>
+          <span>Hello, I&apos;m</span>
           <div className="w-12 h-12 md:w-16 md:h-16 rounded-full bg-linear-to-br from-purple-600 to-blue-600 flex items-center justify-center font-bold text-xl md:text-2xl text-white">
             PP
           </div>
@@ -45,7 +45,7 @@ export function Hero() {
             href="#contact"
             className="bg-linear-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white text-lg px-8 py-4 rounded-full group flex items-center gap-2 transition-all"
           >
-            Let's Connect
+            Let&apos;s Connect
             <ArrowRight
               className="group-hover:translate-x-1 transition-transform"
               size={20}
