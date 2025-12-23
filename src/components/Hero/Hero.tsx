@@ -8,6 +8,7 @@ export function Hero() {
   return (
     <section
       id="home"
+      data-reveal
       ref={heroRef}
       className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20 text-white"
       style={{
@@ -18,7 +19,7 @@ export function Hero() {
         backgroundAttachment: "fixed",
       }}
     >
-      <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/40 to-black"></div>
+      <div className="absolute inset-0 bg-linear-to-b from-black/70 via-black/40 to-black"></div>
 
       <div className="container mx-auto px-6 relative z-10 hero-content text-center">
     
@@ -32,7 +33,7 @@ export function Hero() {
 
         <div className="flex items-center justify-center gap-4 mb-8 text-xl md:text-2xl">
           <span>Hello, I'm</span>
-          <div className="w-12 h-12 md:w-16 md:h-16 rounded-full bg-gradient-to-br from-purple-600 to-blue-600 flex items-center justify-center font-bold text-xl md:text-2xl text-white">
+          <div className="w-12 h-12 md:w-16 md:h-16 rounded-full bg-linear-to-br from-purple-600 to-blue-600 flex items-center justify-center font-bold text-xl md:text-2xl text-white">
             PP
           </div>
           <span className="font-semibold">Prakshil Patel</span>
@@ -42,7 +43,7 @@ export function Hero() {
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <a
             href="#contact"
-            className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white text-lg px-8 py-4 rounded-full group flex items-center gap-2 transition-all"
+            className="bg-linear-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white text-lg px-8 py-4 rounded-full group flex items-center gap-2 transition-all"
           >
             Let's Connect
             <ArrowRight

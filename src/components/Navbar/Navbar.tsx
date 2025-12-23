@@ -33,8 +33,13 @@ export function AppNavbar() {
           <NavbarLogo />
           <NavItems items={navItems} />
           <div className="flex items-center gap-4">
-            <NavbarButton variant="primary" href="#contact">
-              Hire Me
+            <NavbarButton
+              variant="primary"
+              href="/assets/resume.pdf"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Resume
             </NavbarButton>
           </div>
         </NavBody>
@@ -68,9 +73,11 @@ export function AppNavbar() {
                 onClick={() => setIsMobileMenuOpen(false)}
                 variant="primary"
                 className="w-full"
-                href="#contact"
+                href="/assets/resume.pdf"
+                target="_blank"
+                rel="noreferrer"
               >
-                Hire Me
+                Resume
               </NavbarButton>
             </div>
           </MobileNavMenu>

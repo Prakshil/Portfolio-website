@@ -38,7 +38,13 @@ export default function Education() {
     },
   ];
   return (
-    <section id="education" className="min-h-screen text-white px-6 py-24 bg-black">
+    <section
+      id="education"
+      data-reveal
+      data-reveal-margin="0px 0px 20% 0px"
+      data-reveal-threshold="0.04"
+      className="min-h-screen text-white px-6 py-24 bg-black"
+    >
       <div className="container mx-auto max-w-5xl">
         <h2 className="text-xl md:text-2xl font-light tracking-wider mb-12 text-gray-400">
           EDUCATION

@@ -39,30 +39,35 @@ export default function Footer() {
 								target="_blank"
 								rel="noreferrer"
 								aria-label="GitHub"
-								className="h-12 w-12 rounded-full border border-white/10 bg-neutral-900/40 flex items-center justify-center transition-all hover:-translate-y-0.5 hover:bg-neutral-900/70 hover:border-white/20"
+								className="group h-12 w-12 rounded-full border border-white/10 bg-neutral-900/40 flex items-center justify-center transition-all hover:-translate-y-0.5 hover:border-white/20 hover:opacity-95"
 							>
-								<Github className="h-5 w-5 text-gray-200" />
+								<Github className="h-5 w-5 text-gray-200 transition-all duration-200 group-hover:scale-110 group-hover:-rotate-3 group-hover:text-white" />
 							</a>
 							<a
 								href={links.linkedin}
 								target="_blank"
 								rel="noreferrer"
 								aria-label="LinkedIn"
-								className="h-12 w-12 rounded-full border border-white/10 bg-neutral-900/40 flex items-center justify-center transition-all hover:-translate-y-0.5 hover:bg-neutral-900/70 hover:border-white/20"
+								className="group h-12 w-12 rounded-full border border-white/10 bg-neutral-900/40 flex items-center justify-center transition-all hover:-translate-y-0.5 hover:border-white/20 hover:opacity-95"
 							>
-								<Linkedin className="h-5 w-5 text-gray-200" />
+								<Linkedin className="h-5 w-5 text-gray-200 transition-all duration-200 group-hover:scale-110 group-hover:-rotate-3 group-hover:text-white" />
 							</a>
 							<a
 								href={links.email}
 								aria-label="Email"
-								className="h-12 w-12 rounded-full border border-white/10 bg-neutral-900/40 flex items-center justify-center transition-all hover:-translate-y-0.5 hover:bg-neutral-900/70 hover:border-white/20"
+								className="group h-12 w-12 rounded-full border border-white/10 bg-neutral-900/40 flex items-center justify-center transition-all hover:-translate-y-0.5 hover:border-white/20 hover:opacity-95"
 							>
-								<Mail className="h-5 w-5 text-gray-200" />
+								<Mail className="h-5 w-5 text-gray-200 transition-all duration-200 group-hover:scale-110 group-hover:-rotate-3 group-hover:text-white" />
 							</a>
 						</div>
 
 						<div className="text-sm text-gray-400">
-							<div>Mail: prakshilmpatel@gmail.com</div>
+							<a
+								href={links.email}
+								className="transition-colors hover:text-gray-200"
+							>
+								Mail: prakshilmpatel@gmail.com
+							</a>
 						</div>
 					</div>
 
