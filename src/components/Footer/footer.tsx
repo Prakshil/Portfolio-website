@@ -120,7 +120,7 @@ export default function Footer() {
 
 							<button
 								type="submit"
-								className="w-full bg-linear-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white text-base px-6 py-4 rounded-xl transition-all flex items-center justify-center gap-2"
+								className="w-full bg-linear-to-r from-fuchsia-500 to-orange-500 text-white text-base px-6 py-4 rounded-xl transition-all flex items-center justify-center gap-2"
 							>
 								Send Message
 								<Send className="h-4 w-4" />
@@ -130,8 +130,7 @@ export default function Footer() {
 				</div>
 
 				<div className="mt-14 border-t border-white/10 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-gray-400">
-					<div>© {new Date().getFullYear()} Prakshil Patel</div>
-					<div className="text-gray-500">All rights reserved</div>
+					<div className="hover:text-transparent bg-clip-text bg-linear-to-r from-fuchsia-500 to-orange-500 duration-300">© {new Date().getFullYear()} Prakshil Patel</div>
 				</div>
 			</div>
 		</footer>

@@ -17,7 +17,7 @@ export const featuredProjects: Project[] = [
   {
     slug: "eduhub",
     name: "EduHub - An AI Powered Learning Platform",
-    imageSrc: "/project/EduHub.jpg",
+    imageSrc: "/project/Eduhub.jpg",
     summary:
       "EduHub is a full-scale AI-powered Learning Management System designed to simplify digital education for students, teachers, and administrators. It centralizes course management, learning resources, and performance tracking through role-based dashboards, with a strong focus on usability, scalability, and automation.",
     liveUrl: "https://eduhub-lms-beta.vercel.app/",
@@ -37,7 +37,7 @@ export const featuredProjects: Project[] = [
   {
     slug: "patternverse",
     name: "PatternVerse - A Pattern Library",
-    imageSrc: "/project/PatternVerse.jpg",
+    imageSrc: "/project/Patternverse.jpg",
     summary:
       "PatternVerse is a UI/UX pattern library that provides reusable, production-ready components for modern web applications. It helps developers and designers build consistent interfaces faster by showcasing layouts, buttons, cards, forms, and interaction patterns in a clean, accessible format.",
     liveUrl: "https://pattern-verse.vercel.app/",
@@ -68,7 +68,7 @@ export const featuredProjects: Project[] = [
   {
     slug: "renderbox",
     name: "RenderBox - A Saas Application",
-    imageSrc: "/project/RenderBox.jpg",
+    imageSrc: "/project/Renderbox.jpg",
     summary:
       "RenderBox is a SaaS-style web application built with scalability in mind. It demonstrates a structured dashboard experience, modular components, and a subscription-ready architecture—serving as a strong foundation for launching modern software products.",
     liveUrl: "https://renderbox-puce.vercel.app/",
@@ -88,7 +88,7 @@ export const moreProjects: Project[] = [
   {
     slug: "stacklamp",
     name: "StackLamp - A QnA Platform",
-    imageSrc: "/project/StackLamp.jpg",
+    imageSrc: "/project/Stacklamp.jpg",
     summary:
       "StackLamp is a StackOverflow-inspired Q&A platform where users can ask questions, post answers, and engage through voting mechanisms. It focuses on community interaction, structured content, and scalable backend services.",
     liveUrl: "https://stacklamp-21.appwrite.network/",
@@ -105,7 +105,7 @@ export const moreProjects: Project[] = [
   {
     slug: "authflow",
     name: "AuthFlow - Authentication System",
-    imageSrc: "/project/AuthFlow.jpg",
+    imageSrc: "/project/authflow.jpg",
     summary:
       "AuthFlow is a secure, production-ready authentication system designed to be reused across multiple applications. It includes login, registration, session handling, password management, and authorization workflows aligned with best practices.",
     liveUrl: "https://authflow-two.vercel.app/",
@@ -126,7 +126,7 @@ export const awwwardsProjects: Project[] = [
   {
     slug: "neonnectar",
     name: "NeonNectar",
-    imageSrc: "/project/NeonNectar.jpg",
+    imageSrc: "/project/Neonnectar.jpg",
     summary:
       "NeonNectar is a visually rich 3D animated website showcasing advanced frontend animation techniques. It focuses on immersive UX, smooth transitions, and modern web aesthetics—great for premium brands or creative portfolios.",
     liveUrl: "https://neon-nectar.vercel.app/",

@@ -47,7 +47,7 @@ export default function Education() {
     >
       <div className="container mx-auto max-w-5xl">
         <h2 className="text-xl md:text-2xl font-light tracking-wider mb-12 text-gray-400">
-          EDUCATION
+          LEARNING <span className="text-transparent bg-clip-text bg-linear-to-r from-fuchsia-500 to-orange-500">JOURNEY</span>
         </h2>
         <Timeline
           showHeader={false}

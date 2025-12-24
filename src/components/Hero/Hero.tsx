@@ -39,7 +39,7 @@ export function Hero() {
           <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
           <a
             href="#contact"
-            className="bg-linear-to-r from-fuchsia-500 to-orange-500 text-white text-lg px-8 py-4 rounded-full group flex items-center gap-2 transition-all"
+            className="bg-linear-to-r from-fuchsia-500 to-orange-500 text-white text-lg px-4 py-2 rounded-full group flex items-center gap-2 transition-all"
           >
             Let&apos;s Connect
             <ArrowRight

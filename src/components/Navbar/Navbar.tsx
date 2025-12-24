@@ -20,6 +20,7 @@ export function AppNavbar() {
     { name: "Projects", link: "#projects" },
     { name: "Skills", link: "#skills" },
     { name: "Services", link: "#services" },
+    { name: "Certifications", link: "#certifications" },
     { name: "Contact", link: "#contact" },
   ];
 
@@ -35,7 +36,7 @@ export function AppNavbar() {
           <div className="flex items-center gap-4">
             <NavbarButton
               variant="primary"
-              href="/assets/resume.pdf"
+              href="https://drive.google.com/file/d/1WuQA6C3hckiJQttZah9lV0QXEqoxYFhZ/view?usp=drive_link"
               target="_blank"
               rel="noreferrer"
             >
