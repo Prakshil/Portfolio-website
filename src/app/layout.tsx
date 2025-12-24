@@ -34,9 +34,9 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Prakshil Patel" }],
   creator: "Prakshil Patel",
-  icons: {
-    icon: [{ url: "./icon.svg", type: "image/svg+xml" }],
-  },
+  // icons: {
+  //   icon: [{ url: "./icon.svg", type: "image/svg+xml" }],
+  // },
   openGraph: {
     title: "Prakshil Patel | Full-Stack Developer & AI/ML Enthusiast",
     description:
