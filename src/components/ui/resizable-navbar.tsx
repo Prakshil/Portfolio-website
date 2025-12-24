@@ -123,7 +123,7 @@ export const NavItems = ({ items, className, onItemClick }: NavItemsProps) => {
         <a
           onMouseEnter={() => setHovered(idx)}
           onClick={onItemClick}
-          className="relative px-4 py-2 text-white hover:text-black transition-colors"
+          className="relative px-4 py-2 text-white/75 hover:text-black transition-colors"
           key={`link-${idx}`}
           href={item.link}
         >
@@ -222,7 +222,7 @@ export const NavbarLogo = () => {
   return (
     <a
       href="#"
-      className="relative z-20 mr-4 flex items-center space-x-2 px-2 py-1 text-sm font-normal text-white"
+      className="relative z-20 mr-4 flex items-center space-x-2 px-2 py-1 text-sm font-normal text-white/90"
     >
 
       <span className="font-bold text-lg">Prakshil Patel</span>

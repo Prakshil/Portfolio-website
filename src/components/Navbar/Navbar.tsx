@@ -63,7 +63,7 @@ export function AppNavbar() {
                 key={`mobile-link-${idx}`}
                 href={item.link}
                 onClick={() => setIsMobileMenuOpen(false)}
-                className="relative text-white"
+                className="relative text-white/80 hover:text-white transition-colors"
               >
                 <span className="block">{item.name}</span>
               </a>

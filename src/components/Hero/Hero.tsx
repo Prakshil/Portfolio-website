@@ -21,29 +21,25 @@ export function Hero() {
     >
       <div className="absolute inset-0 bg-linear-to-b from-black/70 via-black/40 to-black"></div>
 
-      <div className="container mx-auto px-6 relative z-10 hero-content text-center">
-    
-
-        <h1 className="text-5xl md:text-7xl lg:text-8xl font-light mb-8 leading-tight">
-          I help founders turn ideas
-          <br />
-          into seamless{" "}
-          <span className="italic font-serif">digital experiences</span>
-        </h1>
-
-        <div className="flex items-center justify-center gap-4 mb-8 text-xl md:text-2xl">
-          <span>Hello, I&apos;m</span>
-          <div className="w-12 h-12 md:w-16 md:h-16 rounded-full bg-linear-to-br from-purple-600 to-blue-600 flex items-center justify-center font-bold text-xl md:text-2xl text-white">
-            PP
+      <div className="container mx-auto px-6 relative z-10">
+        <div className="mx-auto max-w-5xl text-center">
+          <div className="inline-flex items-center gap-3 rounded-full border border-white/15 bg-white/5 px-4 py-2 text-sm text-white/80 backdrop-blur">
+            <span className="h-2 w-2 rounded-full bg-linear-to-r from-purple-600 to-blue-600" />
+            Full-Stack Developer • AI/ML Enthusiast
           </div>
-          <span className="font-semibold">Prakshil Patel</span>
-          <span>a Full Stack Developer</span>
-        </div>
 
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+          <h1 className="mt-8 text-5xl md:text-7xl lg:text-8xl font-light leading-tight tracking-tight">
+            Prakshil Patel
+          </h1>
+
+          <p className="mt-6 text-lg md:text-xl text-white/75 leading-relaxed max-w-3xl mx-auto">
+            I build scalable, user-focused web apps and intelligent, data-driven features from polished UI to robust APIs.
+          </p>
+
+          <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
           <a
             href="#contact"
-            className="bg-linear-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white text-lg px-8 py-4 rounded-full group flex items-center gap-2 transition-all"
+            className="bg-linear-to-r from-fuchsia-500 to-orange-500 text-white text-lg px-8 py-4 rounded-full group flex items-center gap-2 transition-all"
           >
             Let&apos;s Connect
             <ArrowRight
@@ -55,6 +51,7 @@ export function Hero() {
             <Mail size={20} />
             <span>prakshilmpatel@gmail.com</span>
           </div>
+        </div>
         </div>
       </div>
     </section>
