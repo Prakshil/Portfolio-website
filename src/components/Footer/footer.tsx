@@ -1,9 +1,12 @@
 "use client";
 
-import React, { useMemo } from "react";
-import { Github, Linkedin, Mail, Send } from "lucide-react";
+import React, { useMemo, useState } from "react";
+import { Github, Linkedin, Loader2, Mail, Send } from "lucide-react";
+import { toast } from "sonner";
 
 export default function Footer() {
+	const [isSubmitting, setIsSubmitting] = useState(false);
+
 	const links = useMemo(
 		() => ({
 			github: "https://github.com/Prakshil",
@@ -12,6 +15,40 @@ export default function Footer() {
 		}),
 		[]
 	);
+
+	async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
+		event.preventDefault();
+
+		if (isSubmitting) return;
+		setIsSubmitting(true);
+
+		try {
+			const form = event.currentTarget;
+			const formData = new FormData(form);
+
+			const response = await fetch("https://api.web3forms.com/submit", {
+				method: "POST",
+				body: formData,
+				headers: {
+					Accept: "application/json",
+				},
+			});
+
+			const data = (await response.json()) as { success?: boolean; message?: string };
+
+			if (!response.ok || !data?.success) {
+				throw new Error(data?.message || "Failed to send message");
+			}
+
+			toast.success("Message sent successfully");
+			form.reset();
+		} catch (error) {
+			const message = error instanceof Error ? error.message : "Something went wrong";
+			toast.error(message);
+		} finally {
+			setIsSubmitting(false);
+		}
+	}
 
 	return (
 		<footer id="contact" className="bg-black text-white px-6 py-24">
@@ -72,11 +109,7 @@ export default function Footer() {
 					</div>
 
 					<div className="rounded-2xl bg-neutral-900/60 border border-white/10 p-6 md:p-8">
-						<form
-							action="https://api.web3forms.com/submit"
-							method="POST"
-							className="space-y-4"
-						>
+						<form onSubmit={handleSubmit} className="space-y-4">
 							<input
 								type="hidden"
 								name="access_key"
@@ -120,10 +153,20 @@ export default function Footer() {
 
 							<button
 								type="submit"
-								className="w-full bg-linear-to-r from-fuchsia-500 to-orange-500 text-white text-base px-6 py-4 rounded-xl transition-all flex items-center justify-center gap-2"
+								disabled={isSubmitting}
+								className="w-full bg-linear-to-r from-fuchsia-500 to-orange-500 text-white text-base px-6 py-4 rounded-xl transition-all flex items-center justify-center gap-2 disabled:opacity-70"
 							>
-								Send Message
-								<Send className="h-4 w-4" />
+								{isSubmitting ? (
+									<>
+										Sending...
+										<Loader2 className="h-4 w-4 animate-spin" />
+									</>
+								) : (
+									<>
+										Send Message
+										<Send className="h-4 w-4" />
+									</>
+								)}
 							</button>
 						</form>
 					</div>
