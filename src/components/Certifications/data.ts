@@ -9,7 +9,7 @@ export type Certification = {
 export const certifications: Certification[] = [
 	{
 		title: "Data Analytics and Visualization Job Simulation",
-		issuer: "Certificate of Completion",
+		issuer: "Accenture",
 		date: "Jun 17, 2024",
 		description:
 			"Completed a hands-on simulation focused on analyzing data and communicating insights through clear visualizations.",

@@ -55,6 +55,7 @@ export const featuredProjects: Project[] = [
     imageSrc: "/project/Devconnects.jpg",
     summary:
       "A complete MERN stack job portal where recruiters can post job listings and candidates can search, filter, and apply. Includes authentication, job management, and dynamic data handling via REST APIs.",
+    liveUrl: "https://devconnects-psi.vercel.app/",
     githubUrl: "https://github.com/Prakshil/Job_Portal_MERN.git",
     tech: [
       { name: "MongoDB", icon: "mongodb" },
