@@ -155,4 +155,19 @@ export const awwwardsProjects: Project[] = [
       { name: "Modern UI Design" },
     ],
   },
+  {
+    slug: "magma",
+    name: "Magma",
+    imageSrc: "/project/magma.png",
+    summary:
+      "A Web3 real estate experience clone featuring smooth scrolling, GSAP-driven animations, and immersive storytelling inspired by the Awwwards-winning Magma website.",
+    liveUrl: "https://thisismagma-steel.vercel.app/",
+    githubUrl: "https://github.com/Prakshil/Magma-Awwwards-website.git",
+    tech: [
+      { name: "Gsap" },
+      { name: "Advanced CSS", icon: "css" },
+      { name: "JavaScript Animations", icon: "js" },
+      { name: "Modern UI Design" },
+    ],
+  },
 ];
