@@ -15,6 +15,30 @@ export type Project = {
 
 export const featuredProjects: Project[] = [
   {
+    slug: "collabspace",
+    name: "CollabSpace - Project Management Platform",
+    imageSrc: "/project/collabspace.jpg",
+    summary:
+      "CollabSpace is a modern, full-stack project management platform that empowers teams to collaborate seamlessly, manage tasks efficiently, and track progress in real-time. Built with enterprise-grade authentication and responsive design, it delivers a production-ready solution for teams of all sizes.",
+    liveUrl: "https://collabspace24.vercel.app",
+    githubUrl: "https://github.com/Prakshil/CollabSpace-Project-management-App",
+    tech: [
+      { name: "React 19", icon: "react" },
+      { name: "Redux Toolkit" },
+      { name: "Vite" },
+      { name: "Node.js", icon: "nodejs" },
+      { name: "Express", icon: "express" },
+      { name: "PostgreSQL", icon: "postgres" },
+      { name: "Prisma ORM" },
+      { name: "Clerk Authentication", icon: "jwt" },
+      { name: "Tailwind CSS 4", icon: "tailwind" },
+      { name: "Recharts" },
+      { name: "Inngest" },
+      { name: "Nodemailer" },
+      { name: "Vercel", icon: "vercel" },
+    ],
+  },
+  {
     slug: "eduhub",
     name: "EduHub - An AI Powered Learning Platform",
     imageSrc: "/project/Eduhub.jpg",
