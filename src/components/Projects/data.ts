@@ -64,7 +64,7 @@ export const featuredProjects: Project[] = [
     imageSrc: "/project/schemacraft.jpg",
     summary:
       "SchemaCraft converts a plain-English product idea into a complete database design. Describe what your app needs, get tables/fields/relationships back, iterate by refining the description, and export the final schema as a foundation for building the application.",
-    liveUrl: "https://schemacraf-31.onrender.com",
+    liveUrl: "https://schemacraft31.vercel.app/",
     githubUrl:
       "https://github.com/Prakshil/SchemaCraft-A-Unified-Schema-Solution.git",
     tech: [
