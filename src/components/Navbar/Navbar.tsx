@@ -21,8 +21,8 @@ export function AppNavbar() {
     { name: "Projects", link: "#projects" },
     { name: "AI / ML", link: "#ai-projects" },
     { name: "Skills", link: "#skills" },
-    { name: "Services", link: "#services" },
     { name: "Certifications", link: "#certifications" },
+    { name: "Services", link: "#services" },
     { name: "Contact", link: "#contact" },
   ];
 
@@ -38,7 +38,7 @@ export function AppNavbar() {
           <div className="flex items-center gap-4">
             <NavbarButton
               variant="primary"
-              href="https://drive.google.com/file/d/1WuQA6C3hckiJQttZah9lV0QXEqoxYFhZ/view?usp=drive_link"
+              href="https://drive.google.com/file/d/1lxXTG6Qrwy9jtNS5KCHK7QYII7G3vn4v/view?usp=sharing"
               target="_blank"
               rel="noreferrer"
             >
