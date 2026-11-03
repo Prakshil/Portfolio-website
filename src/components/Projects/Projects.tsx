@@ -10,6 +10,7 @@ import {
   type Project,
   type ProjectTech,
 } from "./data";
+import AiProjectsSection from "./AiProjects";
 
 function isNonEmpty(value?: string) {
   return typeof value === "string" && value.trim().length > 0;
@@ -150,15 +151,17 @@ export default function Projects() {
           ))}
         </div>
 
-        <div className="mt-14 flex justify-center">
-          <button
-            type="button"
-            onClick={() => setShowAll((v) => !v)}
-            className="rounded-full border border-white/10 bg-neutral-900/50 px-6 py-3 text-sm text-white transition-all duration-200 hover:-translate-y-0.5 hover:border-white/20"
-          >
-            {showAll ? "Show less" : "See all projects"}
-          </button>
-        </div>
+        {moreProjects.length > 0 && (
+          <div className="mt-14 flex justify-center">
+            <button
+              type="button"
+              onClick={() => setShowAll((v) => !v)}
+              className="rounded-full border border-white/10 bg-neutral-900/50 px-6 py-3 text-sm text-white transition-all duration-200 hover:-translate-y-0.5 hover:border-white/20"
+            >
+              {showAll ? "Show less" : "See all projects"}
+            </button>
+          </div>
+        )}
 
         <div className="mt-24">
           <p className="text-center text-xs md:text-sm tracking-[0.35em] text-gray-400">
@@ -181,6 +184,9 @@ export default function Projects() {
             ))}
           </div>
         </div>
+
+        {/* AI & ML Projects Section - After Awwwards Designs */}
+        <AiProjectsSection />
       </div>
     </section>
   );

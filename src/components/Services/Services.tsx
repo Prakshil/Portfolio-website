@@ -2,45 +2,42 @@ import React from "react";
 import MagicBento, { BentoCardProps } from "@/components/MagicBento";
 
 const services: BentoCardProps[] = [
-
 	{
-		label: "MERN",
-		title: "MERN Stack Development",
+		label: "Agentic AI",
+		title: "Agentic AI & Multi-Agent Systems",
 		description:
-			"End-to-end MERN builds for startups, dashboards, and admin panels — secure APIs, smooth UX, and production-ready structure.",
+			"Designing autonomous multi-agent systems with Microsoft AutoGen & LLMs — intelligent data profiling, autonomous reasoning, structured tool execution, and Socratic learning workflows.",
 	},
 	{
-		label: "APIs",
-		title: "Backend & API Development",
+		label: "Vision & DL",
+		title: "Computer Vision & Deep Learning",
 		description:
-			"Robust REST APIs and microservices with FastAPI/Fastify/Express — auth, roles, databases, and third‑party integrations.",
+			"Custom neural network pipelines using PyTorch, YOLOv8, and ConvNeXt — fine-tuned object detection, multi-label medical diagnosis, and edge AI hardware deployment.",
 	},
 	{
-		label: "AI",
-		title: "AI-Powered Applications",
+		label: "MLOps",
+		title: "MLOps & GPU Diagnostics",
 		description:
-			"AI features inside your product using ML + modern AI APIs  — chat, automation, recommendations, and smart workflows.",
+			"Telemetry tools for ML training loops, real-time GPU VRAM leak detection via NVIDIA NVML, experiment tracking with MLflow, and automated CI/CD for model delivery.",
 	},
 	{
-		label: "Automation",
-		title: "Workflow Automation",
+		label: "Full Stack",
+		title: "Full-Stack Web Engineering",
 		description:
-			"Automating repetitive tasks and business workflows using APIs, backend logic, and AI. Automating Day to Day tasks to help reduce manual work and improve efficiency.",
+			"High-performance web applications with Next.js, React, Node, and TypeScript — combining modern design-forward interfaces with robust, scalable architectures.",
 	},
 	{
-		label: "Database",
-		title: "Database Design & Optimization",
+		label: "APIs & Cloud",
+		title: "High-Performance APIs & Inference Endpoints",
 		description:
-			"Efficient schemas + performance tuning with Postgres/Neon and modern ORMs (Drizzle/Prisma) for consistency and scale.",
+			"Fast, asynchronous backends built with FastAPI and Express — secure authentication, database modeling, and low-latency model inference microservices.",
 	},
 	{
-		label: "Frontend",
-		title: "UI Integration & Frontend Optimization",
+		label: "Data Systems",
+		title: "Data Warehousing & Intelligent Automation",
 		description:
-			"Pixel-perfect, responsive UI with Tailwind — optimized for performance, SEO, and accessibility.",
+			"Cloud data architectures with Snowflake & PostgreSQL, automated data quality anomaly detection, custom ETL pipelines, and repetitive workflow automation.",
 	},
-
-
 ];
 
 export default function Services() {
@@ -52,10 +49,10 @@ export default function Services() {
 		>
 			<div className="container mx-auto max-w-6xl">
 				<p className="text-center text-xs md:text-sm tracking-[0.35em] text-gray-400">
-					SERVICES
+					SERVICES & EXPERTISE
 				</p>
 				<h2 className="mt-4 text-center text-4xl md:text-6xl font-light text-white">
-					What I Can <span className="italic text-transparent bg-clip-text bg-linear-to-r from-fuchsia-500 to-orange-500">Build</span>
+					What I Can <span className="italic text-transparent bg-clip-text bg-linear-to-r from-fuchsia-500 to-orange-500">Engineer</span>
 				</h2>
 
 				<div className="mt-14 flex justify-center">

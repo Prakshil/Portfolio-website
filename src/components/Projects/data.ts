@@ -13,6 +13,20 @@ export type Project = {
   tech?: ProjectTech[];
 };
 
+export type AiProject = {
+  id: string;
+  title: string;
+  badge?: string;
+  status: "completed" | "in-progress";
+  domains: string[];
+  description: string;
+  techStack: string[];
+  githubUrl?: string;
+  repoStatusText?: string;
+  highlights?: string[];
+  categoryIcon: "vision" | "medical" | "agent" | "genai" | "mlops";
+};
+
 export const featuredProjects: Project[] = [
   {
     slug: "collabspace",
@@ -59,6 +73,49 @@ export const featuredProjects: Project[] = [
     ],
   },
   {
+    slug: "civic-trust-portal",
+    name: "Civic Trust Portal – Citizen-First Digital Platform (SDG-16)",
+    imageSrc: "/project/civic.png",
+    summary:
+      "Civic Trust Portal is a centralized, citizen-first platform aligned with UN Sustainable Development Goal 16 (Peace, Justice and Strong Institutions). It bridges the information gap by unifying legal awareness, government welfare schemes, scholarships, internships, and job opportunities with interactive transparency dashboards and automated aggregation pipelines.",
+    liveUrl: "https://civictrust-coral.vercel.app/",
+    githubUrl: "https://github.com/Prakshil/Civic-Trust-Portal-SDG16.git",
+    tech: [
+      { name: "React", icon: "react" },
+      { name: "Node.js", icon: "nodejs" },
+      { name: "Express", icon: "express" },
+      { name: "Flask", icon: "flask" },
+      { name: "MongoDB", icon: "mongodb" },
+      { name: "Firebase", icon: "firebase" },
+      { name: "REST APIs" },
+      { name: "RapidAPI" },
+      { name: "Web Scraping" },
+    ],
+  },
+  {
+    slug: "cafe-pos",
+    name: "Café POS – Restaurant Management & Point-of-Sale System",
+    imageSrc: "/project/cafe.png",
+    summary:
+      "A comprehensive full-stack Restaurant Point-of-Sale (POS) system engineered to streamline dining operations across dedicated Admin, Waiter, Kitchen, and Cashier interfaces. Features end-to-end table management, real-time synchronized kitchen order workflows via Server-Sent Events (SSE), multi-mode payment processing (UPI/Cash/Card), and analytics reporting.",
+    githubUrl: "https://github.com/Prakshil/Cafe-POS",
+    tech: [
+      { name: "React 18", icon: "react" },
+      { name: "TypeScript", icon: "ts" },
+      { name: "Vite", icon: "vite" },
+      { name: "Tailwind CSS", icon: "tailwind" },
+      { name: "Node.js", icon: "nodejs" },
+      { name: "Express.js", icon: "express" },
+      { name: "PostgreSQL", icon: "postgres" },
+      { name: "Prisma ORM", icon: "prisma" },
+      { name: "Zustand" },
+      { name: "React Query" },
+      { name: "Server-Sent Events (SSE)" },
+      { name: "JWT Auth" },
+      { name: "Razorpay" },
+    ],
+  },
+  {
     slug: "schemacraft",
     name: "SchemaCraft - From a Product Idea to Deployable schema",
     imageSrc: "/project/schemacraft.jpg",
@@ -72,27 +129,10 @@ export const featuredProjects: Project[] = [
       { name: "React", icon: "react" },
       { name: "TypeScript", icon: "ts" },
       { name: "Tailwind CSS", icon: "tailwind" },
-      { name: "FastAPI" ,icon : "fastapi" },
+      { name: "FastAPI", icon: "fastapi" },
       { name: "Python", icon: "python" },
       { name: "Groq (LLM)" },
       { name: "Render " },
-    ],
-  },
-  {
-    slug: "job-portal",
-    name: "Devconnects - A MERN Stack Job Portal",
-    imageSrc: "/project/Devconnects.jpg",
-    summary:
-      "A complete MERN stack job portal where recruiters can post job listings and candidates can search, filter, and apply. Includes authentication, job management, and dynamic data handling via REST APIs.",
-    liveUrl: "https://devconnects-psi.vercel.app/",
-    githubUrl: "https://github.com/Prakshil/Job_Portal_MERN.git",
-    tech: [
-      { name: "MongoDB", icon: "mongodb" },
-      { name: "Express", icon: "express" },
-      { name: "React", icon: "react" },
-      { name: "Node.js", icon: "nodejs" },
-      { name: "REST APIs" },
-      { name: "Authentication" },
     ],
   },
   {
@@ -128,44 +168,7 @@ export const featuredProjects: Project[] = [
   },
 ];
 
-export const moreProjects: Project[] = [
-
-  {
-    slug: "stacklamp",
-    name: "StackLamp - A QnA Platform",
-    imageSrc: "/project/Stacklamp.jpg",
-    summary:
-      "StackLamp is a StackOverflow-inspired Q&A platform where users can ask questions, post answers, and engage through voting mechanisms. It focuses on community interaction, structured content, and scalable backend services.",
-    liveUrl: "https://stacklamp-21.appwrite.network/",
-    githubUrl:
-      "https://github.com/Prakshil/StackLamp-A-Modern-StackOverflow-Clone.git",
-    tech: [
-      { name: "React", icon: "react" },
-      { name: "Appwrite", icon: "appwrite" },
-      { name: "JavaScript", icon: "js" },
-      { name: "Authentication" },
-      { name: "Cloud Backend" },
-    ],
-  },
-  {
-    slug: "authflow",
-    name: "AuthFlow - Authentication System",
-    imageSrc: "/project/authflow.jpg",
-    summary:
-      "AuthFlow is a secure, production-ready authentication system designed to be reused across multiple applications. It includes login, registration, session handling, password management, and authorization workflows aligned with best practices.",
-    liveUrl: "https://authflow-two.vercel.app/",
-    githubUrl:
-      "https://github.com/Prakshil/AuthFlow-Production-level-AuthSystem.git",
-    tech: [
-      { name: "Next.js", icon: "nextjs" },
-      { name: "Node.js", icon: "nodejs" },
-      { name: "React", icon: "react" },
-      { name: "Authentication Tokens" },
-      { name: "Secure API Handling" },
-      { name: "Vercel", icon: "vercel" },
-    ],
-  },
-];
+export const moreProjects: Project[] = [];
 
 export const awwwardsProjects: Project[] = [
   {
@@ -213,5 +216,122 @@ export const awwwardsProjects: Project[] = [
       { name: "JavaScript Animations", icon: "js" },
       { name: "Modern UI Design" },
     ],
+  },
+];
+
+export const aiProjects: AiProject[] = [
+  {
+    id: "industrial-ppe-detection",
+    title: "Industrial PPE Detection System",
+    badge: "Edge Prototype",
+    status: "completed",
+    domains: ["Computer Vision", "Edge AI"],
+    description:
+      "Developed an AI-powered computer vision system for automated PPE detection in industrial environments using a fine-tuned YOLOv8 object detection model. Consolidated and processed datasets from multiple sources, optimized model training, evaluated detection performance, and worked toward edge deployment for real-world industrial safety monitoring.",
+    techStack: [
+      "Python",
+      "PyTorch",
+      "YOLOv8",
+      "Ultralytics",
+      "OpenCV",
+      "Roboflow",
+      "Arduino (Hardware Integration)",
+    ],
+    repoStatusText: "Repository Publishing Soon",
+    categoryIcon: "vision",
+  },
+  {
+    id: "chest-xray-classification",
+    title: "Multi-Label Chest X-Ray Disease Classification",
+    badge: "Healthcare Deep Learning",
+    status: "completed",
+    domains: ["Deep Learning", "Healthcare AI"],
+    description:
+      "Engineered a research-oriented deep learning pipeline for multi-label classification of 14 thoracic diseases from chest X-ray images. Leveraged ConvNeXt-Large with GCN-based label correlation modeling, class-imbalance-aware loss functions, probability calibration, and patient-level stratification. Evaluated cross-dataset generalization using independent CheXpert and MIMIC-CXR datasets.",
+    techStack: [
+      "Python",
+      "PyTorch",
+      "Torchvision",
+      "ConvNeXt",
+      "GCN",
+      "OpenCV",
+      "Albumentations",
+      "MLflow",
+      "Scikit-learn",
+    ],
+    githubUrl:
+      "https://github.com/Prakshil/14-Disease-Multi-Label-Classification-CNN-model",
+    categoryIcon: "medical",
+  },
+  {
+    id: "datasentinel",
+    title: "DataSentinel – Multi-Agent Data Quality Analysis Platform",
+    badge: "Agentic AI System",
+    status: "completed",
+    domains: ["Agentic AI", "Data Engineering"],
+    description:
+      "Built an intelligent multi-agent system that automates data quality analysis in Snowflake data warehouses. Employs five specialized AI agents to plan investigations, execute SQL queries, perform statistical profiling, identify anomalies, and generate severity-based recommendations with comprehensive HTML reports through a natural-language interface.",
+    techStack: [
+      "Python",
+      "Microsoft AutoGen",
+      "Snowflake",
+      "SQL",
+      "OpenAI API",
+      "OpenRouter",
+      "Ollama",
+      "Pandas",
+      "YData Profiling",
+      "Streamlit",
+      "AsyncIO",
+    ],
+    githubUrl: "https://github.com/Prakshil/Datasentinel",
+    categoryIcon: "agent",
+  },
+  {
+    id: "researchbuddy",
+    title: "ResearchBuddy – AI-Powered Research Paper Assistant",
+    badge: "GenAI & LLM Assistant",
+    status: "completed",
+    domains: ["Generative AI", "LLM Applications"],
+    description:
+      "Developed an interactive AI-powered research assistant that transforms complex academic papers into understandable, step-by-step learning experiences. Processes uploaded research PDFs, enables contextual conversations, and uses Socratic-style prompting to assess prior knowledge, explain technical concepts, and improve research paper comprehension.",
+    techStack: [
+      "Python",
+      "Streamlit",
+      "OpenAI SDK",
+      "GPT-4o-mini",
+      "OpenRouter API",
+      "PyMuPDF4LLM",
+      "Python-dotenv",
+    ],
+    githubUrl: "https://github.com/Prakshil/ResearchBuddy",
+    categoryIcon: "genai",
+  },
+  {
+    id: "trainwatch",
+    title: "TrainWatch – Lightweight ML Training & GPU Monitoring Library",
+    badge: "In Progress",
+    status: "in-progress",
+    domains: ["ML Infrastructure", "MLOps"],
+    description:
+      "Developing a lightweight Python monitoring library for tracking machine learning training loops, identifying performance bottlenecks, and detecting potential GPU VRAM memory leaks in real time. Features a configurable, drop-in Watcher class that provides training heartbeats, GPU memory diagnostics, and step-level performance metrics, enabling reliable long-running experiments across cloud notebooks and remote GPU environments.",
+    techStack: [
+      "Python",
+      "PyTorch",
+      "CUDA",
+      "NVIDIA NVML (pynvml)",
+      "Setuptools",
+      "Wheel Packaging",
+      "GitHub Actions",
+      "CI/CD",
+    ],
+    highlights: [
+      "Real-time GPU VRAM monitoring & potential memory leak detection",
+      "Training-loop heartbeats & step-level performance diagnostics",
+      "Configurable drop-in Watcher class with minimal overhead",
+      "Cross-platform compatibility & automated CI testing",
+    ],
+    githubUrl: "https://github.com/Prakshil/Train-watch",
+    categoryIcon: "mlops",
   },
 ];

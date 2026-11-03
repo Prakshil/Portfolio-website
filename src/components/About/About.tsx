@@ -17,12 +17,16 @@ export default function About() {
             <span className="italic text-transparent bg-clip-text bg-linear-to-r from-fuchsia-500 to-orange-500">
               Full-Stack Developer
             </span>{" "}
-            and AI/ML enthusiast, currently pursuing a B.Tech in ICT at Adani University.
+            and{" "}
+            <span className="italic text-transparent bg-clip-text bg-linear-to-r from-fuchsia-500 to-orange-500">
+              AI/ML Engineer
+            </span>
+            , currently pursuing a B.Tech in ICT at Adani University.
           </p>
 
           <p className="text-lg md:text-xl leading-relaxed text-white/70 max-w-4xl">
-            I build scalable, user-focused applications by combining clean frontend design with powerful backend systems.
-            I enjoy turning ideas into real-world products by crafting intuitive interfaces, developing robust APIs, and integrating intelligent, data-driven features, with a strong focus on clean, maintainable, and scalable code.
+            I build scalable, user-focused applications by combining clean frontend design with powerful backend and machine learning systems.
+            My work spans full-stack web platforms, computer vision models, agentic data quality pipelines, and lightweight GPU monitoring infrastructure — engineered with a passion for high performance, modular code, and real-world impact.
           </p>
         </div>
       </div>
