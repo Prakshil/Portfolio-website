@@ -38,7 +38,7 @@ export function AppNavbar() {
           <div className="flex items-center gap-4">
             <NavbarButton
               variant="primary"
-              href="https://drive.google.com/file/d/1lxXTG6Qrwy9jtNS5KCHK7QYII7G3vn4v/view?usp=sharing"
+              href="https://drive.google.com/file/d/19vocV8y3YRtWBqbGidhp4uY2-JmOYYHR/view?usp=sharing"
               target="_blank"
               rel="noreferrer"
             >
