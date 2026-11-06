@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://prakshil.vercel.app";
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://www.prakshilpatel.in";
 
 export const viewport: Viewport = {
   themeColor: "#000000",
@@ -114,7 +114,7 @@ export const metadata: Metadata = {
     },
   },
   verification: {
-    google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION,
+    google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION || "google7c5808ba0fbd580a",
   },
   formatDetection: {
     email: false,

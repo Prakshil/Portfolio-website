@@ -148,7 +148,7 @@ export default async function Image() {
               fontFamily: "monospace",
             }}
           >
-            prakshil.vercel.app
+            prakshilpatel.in
           </span>
         </div>
       </div>

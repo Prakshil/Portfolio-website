@@ -2,7 +2,7 @@
 
 > Official portfolio website of **Prakshil Patel**, showcasing enterprise web systems, autonomous multi-agent AI platforms, deep learning research pipelines, and complexity theory explorations.
 
-[![Portfolio Live](https://img.shields.io/badge/Portfolio-Live_Site-f97316?style=for-the-badge&logo=vercel)](https://prakshil.vercel.app)
+[![Portfolio Live](https://img.shields.io/badge/Portfolio-prakshilpatel.in-f97316?style=for-the-badge&logo=googlechrome)](https://www.prakshilpatel.in)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Prakshil_Patel-0A66C2?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/prakshil-patel/)
 [![GitHub](https://img.shields.io/badge/GitHub-Prakshil-181717?style=for-the-badge&logo=github)](https://github.com/Prakshil)
 [![Email](https://img.shields.io/badge/Email-prakshilmpatel%40gmail.com-EA4335?style=for-the-badge&logo=gmail)](mailto:prakshilmpatel@gmail.com)
@@ -59,7 +59,7 @@ His work spans production-grade web applications, autonomous multi-agent systems
 
 ## 📬 Contact
 
-- **Website**: [prakshil.vercel.app](https://prakshil.vercel.app)
+- **Website**: [prakshilpatel.in](https://www.prakshilpatel.in)
 - **Email**: [prakshilmpatel@gmail.com](mailto:prakshilmpatel@gmail.com)
 - **LinkedIn**: [linkedin.com/in/prakshil-patel](https://www.linkedin.com/in/prakshil-patel/)
 - **GitHub**: [github.com/Prakshil](https://github.com/Prakshil)
