@@ -75,7 +75,7 @@ export default function Footer() {
 								href={links.github}
 								target="_blank"
 								rel="noreferrer"
-								aria-label="GitHub"
+								aria-label="Prakshil Patel on GitHub"
 								className="group h-12 w-12 rounded-full border border-white/10 bg-neutral-900/40 flex items-center justify-center transition-all hover:-translate-y-0.5 hover:border-white/20 hover:opacity-95"
 							>
 								<Github className="h-5 w-5 text-gray-200 transition-all duration-200 group-hover:scale-110 group-hover:-rotate-3 group-hover:text-white" />
@@ -84,14 +84,14 @@ export default function Footer() {
 								href={links.linkedin}
 								target="_blank"
 								rel="noreferrer"
-								aria-label="LinkedIn"
+								aria-label="Prakshil Patel on LinkedIn"
 								className="group h-12 w-12 rounded-full border border-white/10 bg-neutral-900/40 flex items-center justify-center transition-all hover:-translate-y-0.5 hover:border-white/20 hover:opacity-95"
 							>
 								<Linkedin className="h-5 w-5 text-gray-200 transition-all duration-200 group-hover:scale-110 group-hover:-rotate-3 group-hover:text-white" />
 							</a>
 							<a
 								href={links.email}
-								aria-label="Email"
+								aria-label="Send email to Prakshil Patel"
 								className="group h-12 w-12 rounded-full border border-white/10 bg-neutral-900/40 flex items-center justify-center transition-all hover:-translate-y-0.5 hover:border-white/20 hover:opacity-95"
 							>
 								<Mail className="h-5 w-5 text-gray-200 transition-all duration-200 group-hover:scale-110 group-hover:-rotate-3 group-hover:text-white" />
@@ -154,7 +154,7 @@ export default function Footer() {
 							<button
 								type="submit"
 								disabled={isSubmitting}
-								className="w-full bg-linear-to-r from-fuchsia-500 to-orange-500 text-white text-base px-6 py-4 rounded-xl transition-all flex items-center justify-center gap-2 disabled:opacity-70"
+								className="rounded-full bg-linear-to-r from-fuchsia-500 to-orange-500 px-6 py-3 text-sm font-medium text-white transition-opacity hover:opacity-90 disabled:opacity-50 flex items-center justify-center gap-2 w-full sm:w-auto"
 							>
 								{isSubmitting ? (
 									<>
@@ -173,7 +173,7 @@ export default function Footer() {
 				</div>
 
 				<div className="mt-14 border-t border-white/10 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-gray-400">
-					<div className="hover:text-transparent bg-clip-text bg-linear-to-r from-fuchsia-500 to-orange-500 duration-300">© {new Date().getFullYear()} Prakshil Patel</div>
+					<div className="hover:text-transparent bg-clip-text bg-linear-to-r from-fuchsia-500 to-orange-500 duration-300">© {new Date().getFullYear()} Prakshil Patel — Full-Stack Developer & AI/ML Engineer. All rights reserved.</div>
 				</div>
 			</div>
 		</footer>

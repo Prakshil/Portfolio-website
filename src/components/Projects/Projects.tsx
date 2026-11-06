@@ -22,7 +22,7 @@ function TechBadge({ tech }: { tech: ProjectTech }) {
       {tech.icon ? (
         <img
           src={`https://skillicons.dev/icons?i=${tech.icon}&theme=dark`}
-          alt={tech.name}
+          alt={`${tech.name} icon`}
           loading="lazy"
           className="h-4 w-4"
         />
@@ -44,11 +44,12 @@ function ProjectRow({ project, reverse }: { project: Project; reverse: boolean }
         href: project.liveUrl,
         target: "_blank",
         rel: "noreferrer",
+        "aria-label": `View live website for ${project.name}`,
       }
     : {};
 
   return (
-    <div
+    <article
       className={`grid items-center gap-8 md:gap-12 md:grid-cols-2 ${
         reverse ? "md:[&>*:first-child]:order-2" : ""
       }`}
@@ -61,7 +62,7 @@ function ProjectRow({ project, reverse }: { project: Project; reverse: boolean }
           <div className="relative aspect-[16/10] w-full">
             <Image
               src={project.imageSrc as string}
-              alt={project.name}
+              alt={`${project.name} - Project by Prakshil Patel`}
               fill
               sizes="(max-width: 768px) 100vw, 50vw"
               className="object-contain p-3 transition-transform duration-300 group-hover:scale-[1.01]"
@@ -70,14 +71,15 @@ function ProjectRow({ project, reverse }: { project: Project; reverse: boolean }
             <div className="pointer-events-none absolute inset-0 bg-linear-to-br from-white/0 via-white/0 to-white/5 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
           </div>
         ) : (
-          <div className="flex aspect-[16/10] w-full items-center justify-center px-6 text-center text-sm text-gray-400">
-            Add image for {project.name}
+          <div className="flex aspect-[16/10] w-full flex-col items-center justify-center gap-2 px-6 text-center text-sm text-gray-400">
+            <span className="text-xs uppercase tracking-widest text-gray-500 font-mono">Project Preview</span>
+            <span className="text-sm font-light text-gray-300">{project.name}</span>
           </div>
         )}
       </ImageWrapper>
 
       <div>
-        <p className="text-xs tracking-[0.35em] text-gray-400">PROJECT</p>
+        <p className="text-xs tracking-[0.35em] text-gray-400">FEATURED PROJECT</p>
         <h3 className="mt-4 text-3xl md:text-4xl font-light">
           <span className="italic text-transparent bg-clip-text bg-linear-to-r from-fuchsia-500 to-orange-500">
             {project.name}
@@ -102,6 +104,7 @@ function ProjectRow({ project, reverse }: { project: Project; reverse: boolean }
               href={project.githubUrl}
               target="_blank"
               rel="noreferrer"
+              aria-label={`View ${project.name} source repository on GitHub`}
               className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-neutral-900/60 px-5 py-2 text-sm text-white transition-all duration-200 hover:-translate-y-0.5 hover:border-white/20"
             >
               <Github size={18} />
@@ -116,7 +119,7 @@ function ProjectRow({ project, reverse }: { project: Project; reverse: boolean }
           ) : null}
         </div>
       </div>
-    </div>
+    </article>
   );
 }
 
@@ -132,7 +135,7 @@ export default function Projects() {
     <section id="projects" data-reveal className="min-h-screen text-white px-6 py-24 bg-black">
       <div className="container mx-auto max-w-6xl">
         <p className="text-center text-xs md:text-sm tracking-[0.35em] text-gray-400">
-          PROJECTS
+          PORTFOLIO WORK
         </p>
         <h2 className="mt-4 text-center text-4xl md:text-6xl font-light text-white">
           Featured{" "}

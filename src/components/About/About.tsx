@@ -13,7 +13,8 @@ export default function About() {
 
         <div className="mt-12 space-y-8">
           <p className="text-3xl md:text-4xl lg:text-5xl font-light leading-relaxed text-gray-200">
-            I&apos;m a{" "}
+            I&apos;m{" "}
+            <span className="font-normal text-white">Prakshil Patel</span> — a{" "}
             <span className="italic text-transparent bg-clip-text bg-linear-to-r from-fuchsia-500 to-orange-500">
               Full-Stack Developer
             </span>{" "}

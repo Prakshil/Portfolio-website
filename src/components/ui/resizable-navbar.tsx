@@ -221,7 +221,8 @@ export const MobileNavToggle = ({
 export const NavbarLogo = () => {
   return (
     <a
-      href="#"
+      href="#home"
+      aria-label="Prakshil Patel - Return to top"
       className="relative z-20 mr-4 flex items-center space-x-2 px-2 py-1 text-sm font-normal text-white/90"
     >
 
